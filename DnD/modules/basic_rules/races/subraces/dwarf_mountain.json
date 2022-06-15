@@ -1,0 +1,19 @@
+{
+  "parent": "dwarf",
+  "name": "Mountain Dwarf",
+  "description": "As a mountain dwarf, you’re strong and hardy, accustomed to a difficult life in rugged terrain. You’re probably on the tall side (for a dwarf), and tend toward lighter coloration. The shield dwarves of northern Faerûn, as well as the ruling Hylar clan and the noble Daewar clan of Dragonlance, are mountain dwarves.",
+  "ability_score_modifier": { "strength": 2 },
+  "racial_traits": {
+    "mountaindwarf_armor": {
+      "name": "Dwarven Armor Training",
+      "description": "You have proficiency with light and medium armor.",
+      "effects": {
+        "dwarf_armor_prof": {
+          "prof_type": "armor", //skill, weapon, tool, language, armor
+          "armour_level": 2
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,96 @@
+{
+  "name": "Dwarf",
+  "ability_score_modifier": {
+    "Strength": 0,
+    "Dexterity": 0,
+    "Constitution": 2,
+    "Intelligence": 0,
+    "Wisdom": 0,
+    "Charisma": 0
+  },
+  "age": {
+    "min": 50,
+    "max": 350
+  },
+  "alignment": {
+    "autonomy": 0, //Law-Chaos Axis
+    "morality": 0 //Good-Evil Axis
+  },
+  "size": "Medium",
+  "speeds": {
+    "base": 5,
+    "swim": 0,
+    "fly": 0,
+    "climb": 0,
+    "burrow": 0
+  },
+  "languages": [
+      "common",
+      "dwarvish"
+    ],
+  "racial_traits": {
+    "dwarfdarkvision": {
+      "name": "Darkvision",
+      "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can’t discern color in darkness only shades of gray.",
+      "effects": {
+        "dark_sight": {
+          "modifier": "darkvision",
+          "value": 12
+        }
+      }
+    },
+
+    "dwarfresistance": {
+      "name": "Dwarven Resilience",
+      "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+      "effects": {
+        "poison_damage": {
+          "modifier": "resistPoison",
+          "value": true
+        },
+        "poison_condition": {
+          "modifier": "advantagePoisoned",
+          "value": true
+        }
+      }
+    },
+
+    "dwarfweapontraining": {
+      "name": "Dwarven Combat Training",
+      "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
+      "effects": {
+        "dwarf_weapon_proficiency": {
+          "prof_type": "weapon", //skill, weapon, tool, language
+          "options": [ "battleaxe", "handaxe", "light_hammer", "warhammer" ],
+          "amount": -1
+        }
+      }
+    },
+
+    "dwarftooltraining": {
+      "name": "Tool Proficiency",
+      "description": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.",
+      "effects": {
+        "dwarf_tool_proficiency": {
+          "prof_type": "tool",
+          "options": [ "smiths_tools", "brewers_supplies", "masons_tools" ],
+          "amount": 1,
+          "multiplier": 1
+        }
+      }
+    },
+
+    "stonecunning": {
+      "name": "Stone Cunning",
+      "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
+      "effects": {
+        "dwarf_temp_expert": {
+          "temp_prof_type": "skill",
+          "options": [ "history" ],
+          "multiplier": 2,
+          "condition": "dwarf_stonework"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="modules\example_module\classes\" />
+    <Folder Include="modules\example_module\backgrounds\" />
+    <Folder Include="modules\example_module\equipment\armor\" />
+    <Folder Include="modules\example_module\equipment\magic items\" />
+    <Folder Include="modules\example_module\equipment\weapons\" />
+    <Folder Include="modules\example_module\feats\" />
+    <Folder Include="modules\example_module\spells\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+</Project>

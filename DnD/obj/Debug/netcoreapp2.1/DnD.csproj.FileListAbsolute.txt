@@ -1,0 +1,11 @@
+C:\Users\Infer\source\repos\DnD\DnD\obj\Debug\netcoreapp2.1\DnD.csprojAssemblyReference.cache
+C:\Users\Infer\source\repos\DnD\DnD\obj\Debug\netcoreapp2.1\DnD.csproj.CoreCompileInputs.cache
+C:\Users\Infer\source\repos\DnD\DnD\obj\Debug\netcoreapp2.1\DnD.AssemblyInfoInputs.cache
+C:\Users\Infer\source\repos\DnD\DnD\obj\Debug\netcoreapp2.1\DnD.AssemblyInfo.cs
+C:\Users\Infer\source\repos\DnD\DnD\bin\Debug\netcoreapp2.1\DnD.deps.json
+C:\Users\Infer\source\repos\DnD\DnD\bin\Debug\netcoreapp2.1\DnD.runtimeconfig.json
+C:\Users\Infer\source\repos\DnD\DnD\bin\Debug\netcoreapp2.1\DnD.runtimeconfig.dev.json
+C:\Users\Infer\source\repos\DnD\DnD\bin\Debug\netcoreapp2.1\DnD.dll
+C:\Users\Infer\source\repos\DnD\DnD\bin\Debug\netcoreapp2.1\DnD.pdb
+C:\Users\Infer\source\repos\DnD\DnD\obj\Debug\netcoreapp2.1\DnD.dll
+C:\Users\Infer\source\repos\DnD\DnD\obj\Debug\netcoreapp2.1\DnD.pdb

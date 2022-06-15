@@ -1,0 +1,58 @@
+{
+  "name": "Example Race",
+  "ability_score_modifier": {   //Unmodified ability scores do not need to be listed
+    "strength": 1,
+    "dexterity": 1,
+    "constitution": 1,
+    "intelligence": 1,
+    "wisdom": 1,
+    "charisma": 1
+  },
+  "age": {
+    "min": 20,
+    "max": 100
+  },
+  "alignment": {
+    "autonomy": 1,              //Law-Chaos Axis
+    "morality": 1               //Good-Evil Axis
+  },
+  "size": "medium",
+  "speed": 30,
+  "languages": [
+    "common",
+    "elven",
+    "draconic"
+  ],
+  "racial_traits": {
+    "eg_modifier_trait": {
+      "name": "Modifier Trait",
+      "description": "This is an example modifier trait, this one halves how much rest you need per long rest.",
+      "effects": {
+        "eg_modifier": {
+          "modifier": "full_rest_duration_mult",
+          "value": 0.5
+        }
+      }
+    },
+    "eg_action_trait": {
+      "name": "Action Trait",
+      "description": "This is an example action trait, this one lets you do a thing",
+      "effects": {
+        "action": "example_action_racial"
+      }
+    },
+    "eg_proficiency_trait": {
+      "name": "Proficiency Trait",
+      "description": "This is an example proficiency trait, this one grants you proficiency in the Perception skill",
+      "effects": {
+        "proficiency": {
+          "type": "skill", //skill, weapon, tool, language, armor
+          "skills": [ "perception" ],
+          "amount": -1,
+          "multiplier": 1 //standard values are 0.5 (jack of all trades), 1 (proficient), 2 (expert)
+        }
+      }
+    }
+  },
+  "subrace": [ "subrace1" ]         //Can be Blank
+}

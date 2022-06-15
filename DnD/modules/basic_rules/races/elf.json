@@ -1,0 +1,82 @@
+{
+  "name": "Elf",
+  "ability_score_modifier": {
+    "Strength": 0,
+    "Dexterity": 2,
+    "Constitution": 0,
+    "Intelligence": 0,
+    "Wisdom": 0,
+    "Charisma": 0
+  },
+  "age": {
+    "min": 100,
+    "max": 750
+  },
+  "alignment": {
+    "autonomy": 2, //Law-Chaos Axis
+    "morality": 0 //Good-Evil Axis
+  },
+  "size": "Medium",
+  "speeds": {
+    "base": 6,
+    "swim": 0,
+    "fly": 0,
+    "climb": 0,
+    "burrow": 0
+  },
+  "languages": [
+    "common",
+    "elvish"
+  ],
+  "racial_traits": {
+    "elfdarkvision": {
+      "name": "Darkvision",
+      "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+      "effects": {
+        "dark_sight": {
+          "modifier": "darkvision",
+          "value": 12
+        }
+      }
+    },
+
+    "elfkeensenses": {
+      "name": "Keen Senses",
+      "description": "You have proficiency in the Perception skill.",
+      "effects": {
+        "perception_prof": {
+          "prof_type": "skill",
+          "options": [ "perception" ],
+          "amount": -1,
+          "multiplier": 1
+        }
+      }
+    },
+
+    "elfresistance": {
+      "name": "Fey Ancestry",
+      "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep.",
+      "effects": {
+        "resist_charm": {
+          "modifier": "advantageCharmed",
+          "value": true
+        },
+        "immune_sleep": {
+          "modifier": "immuneMagicSleep",
+          "value": true
+        }
+      }
+    },
+
+    "elftrance": {
+      "name": "Trance",
+      "description": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+      "effects": {
+        "elf_sleep": {
+          "modifier": "full_rest_duration_mult",
+          "value": 0.5
+        }
+      }
+    }
+  }
+}
